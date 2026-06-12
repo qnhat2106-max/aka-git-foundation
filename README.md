@@ -44,3 +44,8 @@ git log: Xem lịch sử commit.
 - **Nguyên tắc bảo mật**: 
     - Tuyệt đối không đưa các thông tin nhạy cảm như mật khẩu, API keys hoặc thông tin cá nhân lên GitHub repository công khai.
     - Sử dụng file `.gitignore` để loại bỏ các file không cần thiết hoặc file chứa dữ liệu mật khỏi quá trình theo dõi của Git.
+
+    ### Thực hành Quản lý dự án với GitHub Issues và Projects
+- **GitHub Issues**: Tôi sử dụng Issues để theo dõi các đầu việc (tasks), các lỗi (bugs) hoặc các tính năng mới cần phát triển. Đây là nơi tôi mô tả chi tiết yêu cầu trước khi bắt đầu viết code hoặc nhờ AI hỗ trợ.
+- **GitHub Projects (Project Board)**: Giúp tôi có cái nhìn tổng quan về tiến độ dự án thông qua các cột trạng thái như "Todo", "In Progress", và "Done". Việc này giúp tôi không bị lạc lối khi thực hiện nhiều thay đổi cùng lúc với AI.
+- **Mối liên hệ**: Mỗi commit hoặc Pull Request nên được gắn với một Issue cụ thể để dễ dàng truy xuất nguồn gốc và lý do của sự thay đổi.
