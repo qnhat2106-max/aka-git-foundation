@@ -24,3 +24,10 @@ git log: Xem lịch sử commit.
 ### Thực hành với Nhánh (Branching) - "Phanh an toàn" nâng cao
 - **Tại sao cần dùng Branch?**: Theo quy trình của AKA Lab, khi tôi muốn nhờ AI viết một tính năng mới hoặc sửa lỗi phức tạp, tôi sẽ không làm trực tiếp trên nhánh `main`. Tôi sẽ tạo một nhánh riêng để thử nghiệm [1, 3].
 - **Lợi ích**: Nếu AI sinh code lỗi, nhánh `main` (phiên bản ổn định) vẫn hoàn toàn an toàn. Tôi chỉ việc xóa nhánh lỗi đó đi là xong [3].
+
+### Thực hành "Cỗ máy thời gian" (Rollback & Revert)
+- **Tình huống áp dụng**: Khi AI hỗ trợ viết code nhưng vô tình làm hỏng các tính năng cũ hoặc gây lỗi hệ thống không mong muốn [1, 5].
+- **Cách tôi xử lý**:
+    - Sử dụng `git log --oneline` để tìm ID của commit ổn định gần nhất [3].
+    - Sử dụng lệnh `git revert <commit-id>` để đảo ngược các thay đổi lỗi mà vẫn giữ nguyên lịch sử làm việc [2].
+    - Đây chính là "phao cứu sinh" giúp tôi tự tin hơn khi thực hiện Vibe Coding với tốc độ nhanh.
