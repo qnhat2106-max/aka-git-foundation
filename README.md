@@ -49,3 +49,12 @@ git log: Xem lịch sử commit.
 - **GitHub Issues**: Tôi sử dụng Issues để theo dõi các đầu việc (tasks), các lỗi (bugs) hoặc các tính năng mới cần phát triển. Đây là nơi tôi mô tả chi tiết yêu cầu trước khi bắt đầu viết code hoặc nhờ AI hỗ trợ.
 - **GitHub Projects (Project Board)**: Giúp tôi có cái nhìn tổng quan về tiến độ dự án thông qua các cột trạng thái như "Todo", "In Progress", và "Done". Việc này giúp tôi không bị lạc lối khi thực hiện nhiều thay đổi cùng lúc với AI.
 - **Mối liên hệ**: Mỗi commit hoặc Pull Request nên được gắn với một Issue cụ thể để dễ dàng truy xuất nguồn gốc và lý do của sự thay đổi.
+
+### Checklist Tự đánh giá Hoàn thành Project (Gatekeeping)
+- [x] **Repository cá nhân**: Đã khởi tạo và đẩy lên GitHub.
+- [x] **Số lượng Commit**: Đang thực hiện (Mục tiêu: ít nhất 10 commit có ý nghĩa).
+- [x] **Số lượng Branch**: Đã thực hành ít nhất 3 nhánh khác nhau.
+- [x] **Pull Requests**: Đã thực hiện ít nhất 2 PR trên GitHub.
+- [x] **Xử lý Conflict**: Đã mô tả/thực hành cách giải quyết xung đột.
+- [x] **Rollback/Revert**: Đã thực hành "Cỗ máy thời gian" để quay lại phiên bản ổn định.
+- [x] **Mô tả Vibe Code**: Đã có đoạn viết về cách dùng Git làm "Phanh an toàn" khi làm việc với AI.
