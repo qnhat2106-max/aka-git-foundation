@@ -20,3 +20,27 @@ git log: Xem lịch sử commit.
 - `git status`: Giúp tôi biết mình có quên lưu file hay chưa (như lỗi tôi vừa gặp) [3].
 - `git log`: Cho phép tôi xem lại lịch sử các "điểm dừng" an toàn mà mình đã tạo [3].
 - `git push`: Đưa toàn bộ thành quả lên GitHub để mentor có thể theo dõi và xác nhận kết quả [4].
+
+### Thực hành với Nhánh (Branching) - "Phanh an toàn" nâng cao
+- **Tại sao cần dùng Branch?**: Theo quy trình của AKA Lab, khi tôi muốn nhờ AI viết một tính năng mới hoặc sửa lỗi phức tạp, tôi sẽ không làm trực tiếp trên nhánh `main`. Tôi sẽ tạo một nhánh riêng để thử nghiệm [1, 3].
+- **Lợi ích**: Nếu AI sinh code lỗi, nhánh `main` (phiên bản ổn định) vẫn hoàn toàn an toàn. Tôi chỉ việc xóa nhánh lỗi đó đi là xong [3].
+
+### Thực hành "Cỗ máy thời gian" (Rollback & Revert)
+- **Tình huống áp dụng**: Khi AI hỗ trợ viết code nhưng vô tình làm hỏng các tính năng cũ hoặc gây lỗi hệ thống không mong muốn [1, 5].
+- **Cách tôi xử lý**:
+    - Sử dụng `git log --oneline` để tìm ID của commit ổn định gần nhất [3].
+    - Sử dụng lệnh `git revert <commit-id>` để đảo ngược các thay đổi lỗi mà vẫn giữ nguyên lịch sử làm việc [2].
+    - Đây chính là "phao cứu sinh" giúp tôi tự tin hơn khi thực hiện Vibe Coding với tốc độ nhanh.
+
+    ### Thực hành xử lý Xung đột (Conflict)
+- **Xung đột là gì?**: Xảy ra khi có hai sự thay đổi khác nhau trên cùng một dòng của cùng một file. Trong Vibe Coding, điều này thường xảy ra khi tôi yêu cầu AI sửa một đoạn code mà trước đó tôi đã tự tay chỉnh sửa nhưng chưa đồng bộ.
+- **Cách tôi xử lý**:
+    - Git sẽ đánh dấu vùng bị xung đột.
+    - Tôi sẽ xem xét và chọn giữ lại phiên bản của mình, phiên bản của AI, hoặc kết hợp cả hai.
+    - Sau khi sửa, tôi dùng `git add` để đánh dấu đã xử lý xong và thực hiện commit kết thúc quá trình.
+
+    ### Thực hành GitHub Flow và Bảo mật Repository
+- **GitHub Flow**: Tôi hiểu quy trình làm việc chuẩn gồm: Tạo nhánh (Branch) -> Thực hiện thay đổi (Commits) -> Mở Pull Request (PR) -> Thảo luận/Review -> Trộn vào nhánh chính (Merge). Quy trình này giúp kiểm soát chất lượng code trước khi chính thức xuất hiện ở nhánh `main`.
+- **Nguyên tắc bảo mật**: 
+    - Tuyệt đối không đưa các thông tin nhạy cảm như mật khẩu, API keys hoặc thông tin cá nhân lên GitHub repository công khai.
+    - Sử dụng file `.gitignore` để loại bỏ các file không cần thiết hoặc file chứa dữ liệu mật khỏi quá trình theo dõi của Git.
