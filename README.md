@@ -58,3 +58,8 @@ git log: Xem lịch sử commit.
 - [x] **Xử lý Conflict**: Đã mô tả/thực hành cách giải quyết xung đột.
 - [x] **Rollback/Revert**: Đã thực hành "Cỗ máy thời gian" để quay lại phiên bản ổn định.
 - [x] **Mô tả Vibe Code**: Đã có đoạn viết về cách dùng Git làm "Phanh an toàn" khi làm việc với AI.
+
+### Tổng kết và Cam kết vận hành Git Safety
+- **Cam kết**: Tôi sẽ luôn sử dụng Git như một "Phanh an toàn" [3] bằng cách tạo nhánh trước mỗi lần yêu cầu AI thực hiện thay đổi lớn.
+- **Sẵn sàng**: Tôi đã nắm vững các kỹ năng: quản lý repository, add/commit/push, làm việc với branch, xử lý conflict và rollback [4].
+- **Mục tiêu**: Sẵn sàng chuyển tiếp sang khóa Vibe Code với tư duy kiểm soát mã nguồn chặt chẽ [5].
