@@ -38,3 +38,9 @@ git log: Xem lịch sử commit.
     - Git sẽ đánh dấu vùng bị xung đột.
     - Tôi sẽ xem xét và chọn giữ lại phiên bản của mình, phiên bản của AI, hoặc kết hợp cả hai.
     - Sau khi sửa, tôi dùng `git add` để đánh dấu đã xử lý xong và thực hiện commit kết thúc quá trình.
+
+    ### Thực hành GitHub Flow và Bảo mật Repository
+- **GitHub Flow**: Tôi hiểu quy trình làm việc chuẩn gồm: Tạo nhánh (Branch) -> Thực hiện thay đổi (Commits) -> Mở Pull Request (PR) -> Thảo luận/Review -> Trộn vào nhánh chính (Merge). Quy trình này giúp kiểm soát chất lượng code trước khi chính thức xuất hiện ở nhánh `main`.
+- **Nguyên tắc bảo mật**: 
+    - Tuyệt đối không đưa các thông tin nhạy cảm như mật khẩu, API keys hoặc thông tin cá nhân lên GitHub repository công khai.
+    - Sử dụng file `.gitignore` để loại bỏ các file không cần thiết hoặc file chứa dữ liệu mật khỏi quá trình theo dõi của Git.
