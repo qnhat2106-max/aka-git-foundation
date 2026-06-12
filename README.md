@@ -20,3 +20,7 @@ git log: Xem lịch sử commit.
 - `git status`: Giúp tôi biết mình có quên lưu file hay chưa (như lỗi tôi vừa gặp) [3].
 - `git log`: Cho phép tôi xem lại lịch sử các "điểm dừng" an toàn mà mình đã tạo [3].
 - `git push`: Đưa toàn bộ thành quả lên GitHub để mentor có thể theo dõi và xác nhận kết quả [4].
+
+### Thực hành với Nhánh (Branching) - "Phanh an toàn" nâng cao
+- **Tại sao cần dùng Branch?**: Theo quy trình của AKA Lab, khi tôi muốn nhờ AI viết một tính năng mới hoặc sửa lỗi phức tạp, tôi sẽ không làm trực tiếp trên nhánh `main`. Tôi sẽ tạo một nhánh riêng để thử nghiệm [1, 3].
+- **Lợi ích**: Nếu AI sinh code lỗi, nhánh `main` (phiên bản ổn định) vẫn hoàn toàn an toàn. Tôi chỉ việc xóa nhánh lỗi đó đi là xong [3].
