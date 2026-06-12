@@ -31,3 +31,10 @@ git log: Xem lịch sử commit.
     - Sử dụng `git log --oneline` để tìm ID của commit ổn định gần nhất [3].
     - Sử dụng lệnh `git revert <commit-id>` để đảo ngược các thay đổi lỗi mà vẫn giữ nguyên lịch sử làm việc [2].
     - Đây chính là "phao cứu sinh" giúp tôi tự tin hơn khi thực hiện Vibe Coding với tốc độ nhanh.
+
+    ### Thực hành xử lý Xung đột (Conflict)
+- **Xung đột là gì?**: Xảy ra khi có hai sự thay đổi khác nhau trên cùng một dòng của cùng một file. Trong Vibe Coding, điều này thường xảy ra khi tôi yêu cầu AI sửa một đoạn code mà trước đó tôi đã tự tay chỉnh sửa nhưng chưa đồng bộ.
+- **Cách tôi xử lý**:
+    - Git sẽ đánh dấu vùng bị xung đột.
+    - Tôi sẽ xem xét và chọn giữ lại phiên bản của mình, phiên bản của AI, hoặc kết hợp cả hai.
+    - Sau khi sửa, tôi dùng `git add` để đánh dấu đã xử lý xong và thực hiện commit kết thúc quá trình.
